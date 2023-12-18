@@ -1,0 +1,67 @@
+---
+title: 'About'
+description: 'About Escape Hilo'
+preloadImg: '/assets/images/mannermedia.png'
+permalink: 'about/'
+eleventyNavigation:
+    key: About Us
+    order: 200
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/css/about.css">
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">About Us</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/kaibg2.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/kaibg2.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/kaibg2.jpg" alt="Escape Hilo" loading="eager" width="2500" height="1667">
+        </picture>
+
+    </section>
+
+    <!-- ============================================ -->
+    <!--                 Side By Side                 -->
+    <!-- ============================================ -->
+
+    <section id="sbs">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-left">
+                <picture class="cs-picture cs-picture1">
+                    <source media="(max-width: 600px)" srcset="/assets/images/kaibg.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/kaibg.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/kaibg.jpg" alt="Escape Hilo" loading="lazy" width="400" height="563">
+                </picture>
+                <picture class="cs-picture cs-picture2">
+                    <source media="(max-width: 600px)" srcset="/assets/images/kaiface2.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/kaiface2.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/kaiface2.jpg" alt="Escape Hilo" loading="lazy" width="400" height="563">
+                </picture>
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-right">
+                <span class="cs-topper"></span>
+                <h2 class="cs-title">About Manner Media</h2>
+              
+                <p class="cs-text">
+                    My name is Steven Kai Manner and I have been a website developer for over 6 years. I have hand crafted and tailored a custom coded solution for businesses and now I have built hundreds websites and have my method down to a science.         
+               
+               </p>
+                    <a href="/Contact" class="cs-button-solid">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}

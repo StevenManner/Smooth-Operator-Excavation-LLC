@@ -1,0 +1,15 @@
+{
+	"name": "Manner Media LLC",
+	"email": "Manner.Media.Biz@gmail.com",
+	"phoneForTel": "+6615328913",
+	"phoneFormatted": "+1 (661) 532 8913",
+	"address": {
+		"lineOne": "",
+		"lineTwo": "",
+		"city": "",
+		"state": "",
+		"zip": "",
+		"mapLink": ""
+	},
+	"domain": "https://MannerMedia.biz"
+}
